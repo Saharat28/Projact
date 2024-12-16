@@ -17,11 +17,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //  Match Get localhost:4000
 app.get("/", (req,res) => {
-    res.send(" ");
+    res.send("ควย");
 });
 
 // ใช้ productRoute เมื่อ requst ขึ้นต้นด้วย /products
-app.get("/users", userRoute);
+app.use("/users", userRoute);
 
 
 app.listen(port, () => {
